@@ -1,0 +1,39 @@
+footer {
+  padding: 50px 0;
+  background-color: var(--dark);
+}
+
+footer .wrapper {
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer h3 {
+  font-size: 26px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.copyright {
+  padding: 20px 0;
+  text-align: center;
+  color: var(--gray);
+}
+@media screen and (max-width: 968px) {
+footer .wrapper {
+  width: 85%;
+}
+footer h3 {
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+}
+@media screen and (max-width: 500px) {
+footer .wrapper {
+  width: 90%;
+}
+}

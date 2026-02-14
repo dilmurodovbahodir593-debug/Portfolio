@@ -1,0 +1,45 @@
+.banner {
+  background-color: var(--white);
+  padding: 20px 0;
+  transform: rotate(-3deg);
+  margin: 30px 0;
+}
+
+.banner__content ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.banner__content ul::-webkit-scrollbar {
+  display: none;
+}
+
+.banner__content ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.banner__content ul li span {
+  display: flex;
+  align-items: start;
+  height: 20px;
+  justify-content: center;
+  color: var(--yellow);
+}
+@media screen and (max-width: 957px) {
+  .banner__content ul li {
+    max-width: 100px;
+    width: 100%;
+  }
+  .banner {
+    transform: rotate(0deg);
+  }
+}

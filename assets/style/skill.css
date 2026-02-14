@@ -1,0 +1,65 @@
+.skill {
+  background-image: url(../images/skill.jpg);
+  padding: 50px 0;
+  background-size: cover;
+  color: var(--white);
+  position: relative;
+  z-index: 0;
+}
+
+.skill::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--blackLight);
+  z-index: -1;
+  /* backdrop-filter: blur(5px); */
+}
+
+.skill__content--card {
+  width: 31%;
+  padding-left: 30px;
+  position: relative;
+  background-color: var(--blackLight);
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 0;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.skill__content--card::after {
+  content: "";
+  width: 2%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--yellow);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.skill__content--card:hover::after {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+.skill-inside {
+    display: flex;
+    flex-direction: column;
+}
+.skill__content--card {
+  width: 85%;
+}
+}
+@media screen and (max-width: 500px) {
+.skill__content--card {
+  width: 90%;
+}
+}

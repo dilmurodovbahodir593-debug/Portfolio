@@ -1,0 +1,29 @@
+header {
+  border: 1px solid var(--border);
+  padding: 20px 0;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.socials ul {
+  display: flex;
+  gap: 20px;
+}
+
+.socials ul svg path {
+  fill: var(--white);
+}
+
+.socials ul li:hover svg path {
+  fill: var(--yellow);
+}
+
+@media screen and (max-width: 500px) {
+  .socials button {
+    display: none;
+  }
+}
